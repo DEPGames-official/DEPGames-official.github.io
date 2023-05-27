@@ -2,7 +2,7 @@ import { isLoggedIn, setLoggedIn } from "./verify.js";
 
 document.getElementById("login-form").addEventListener("submit", function(event) {
     event.preventDefault(); //Prevent the form from submitting
-
+    
     //Get the username and password
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
