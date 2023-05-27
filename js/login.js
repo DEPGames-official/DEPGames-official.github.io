@@ -1,4 +1,4 @@
-import { isLoggedIn, setLoggedIn } from "./verify.js";
+import { isLoggedIn, setLoggedIn, showInvalidCredentialsMessage } from "./verify.js";
 
 document.getElementById("login-form").addEventListener("submit", function(event) {
     event.preventDefault(); //Prevent the form from submitting
@@ -20,6 +20,9 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         window.location.href = "./html/home.html";
     }
     else{
+        
+        showInvalidCredentialsMessage();
+
         alert("DENIED!");
         //Clear the form fields or show error message
         //Set login session to false
