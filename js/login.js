@@ -1,8 +1,8 @@
-import { isLoggedIn, setLoggedIn } from "./verify.js";
+import { isLoggedIn, setLoggedIn, showInvalidCredentialsMessage } from "./verify.js";
 
 document.getElementById("login-form").addEventListener("submit", function(event) {
     event.preventDefault(); //Prevent the form from submitting
-
+    
     //Get the username and password
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -20,8 +20,9 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         window.location.href = "./html/home.html";
     }
     else{
-        alert("DENIED!");
-        //Clear the form fields or show error message
+        
+        //Show invalid credentials message
+        showInvalidCredentialsMessage();
         //Set login session to false
         setLoggedIn(false);
     }
