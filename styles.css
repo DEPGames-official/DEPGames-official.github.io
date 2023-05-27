@@ -2,8 +2,11 @@
   font-family: sans-serif;
   text-align: center;
 }
-body {
+body  {
   background-color: black;
+}
+#body-home {
+  color: white;
 }
 
 #nav-title {
@@ -93,4 +96,16 @@ body {
   border-radius: 10px 10px 10px 10px;
   border-color: purple;
   height: 26px;
+}
+
+#home-line-1 {
+  margin-top: 20px;
+  color: blue;
+}
+
+#navto-activities {
+  height: 300px;
+  background-color: #d3d3d3;
+  text-align: center;
+  margin-top: 50px;
 }
