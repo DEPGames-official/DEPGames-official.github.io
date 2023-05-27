@@ -1,4 +1,4 @@
-import { setLoggedIn, isLoggedIn } from "./check.js";
+import { isLoggedIn, setLoggedIn } from "./verify.js";
 
 document.getElementById("login-form").addEventListener("submit", function(event) {
     event.preventDefault(); //Prevent the form from submitting
@@ -14,14 +14,18 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     //var validEmail = "email@something.com"
 
     if (username === validUsername && password === validPassword){
-        setLoggedIn(true);
         alert("Welcome!");
-        //Redirect to another page or do something
+        //Set login session to true
+        setLoggedIn(true);
+        //Redirect to another page
+        window.location.href = "/HTML/home.html";
     }
     else{
-        setLoggedIn(false);
         alert("DENIED!");
         //Clear the form fields or show error message
+        //Set login session to false
+        setLoggedIn(false);
     }
-})
+
+});
 
