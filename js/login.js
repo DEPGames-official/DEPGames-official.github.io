@@ -21,10 +21,8 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     }
     else{
         
+        //Show invalid credentials message
         showInvalidCredentialsMessage();
-
-        alert("DENIED!");
-        //Clear the form fields or show error message
         //Set login session to false
         setLoggedIn(false);
     }
