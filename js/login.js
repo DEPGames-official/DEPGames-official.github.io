@@ -14,11 +14,10 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     //var validEmail = "email@something.com"
 
     if (username === validUsername && password === validPassword){
-        alert("Welcome!");
         //Set login session to true
         setLoggedIn(true);
         //Redirect to another page
-        window.location.href = "./HTML/home.html";
+        window.location.href = "./html/home.html";
     }
     else{
         alert("DENIED!");
