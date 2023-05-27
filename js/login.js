@@ -17,7 +17,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         //Set login session to true
         setLoggedIn(true);
         //Redirect to another page
-        window.location.href = "../html/home.html";
+        window.location.href = "./html/home.html";
     }
     else{
         alert("DENIED!");
