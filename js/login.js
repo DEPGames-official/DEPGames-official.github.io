@@ -20,7 +20,6 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         window.location.href = "./html/home.html";
     }
     else{
-        
         //Show invalid credentials message
         showInvalidCredentialsMessage();
         //Set login session to false
