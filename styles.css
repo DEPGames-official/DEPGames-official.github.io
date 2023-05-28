@@ -92,6 +92,10 @@ body  {
   border-color: aqua;
 }
 
+#password.invalidated {
+  border-color: red;
+}
+
 #submit, #reset {
   margin-top: 20px;
   width: 100px;
