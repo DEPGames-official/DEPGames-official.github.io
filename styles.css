@@ -123,6 +123,9 @@ body  {
   border-color: blue;
   border-radius: 10px 10px 10px 10px;
   font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 #navto-feature > button:hover {
@@ -130,4 +133,7 @@ body  {
   border-color: #00ffff;
   color: #00ffff;
   cursor: pointer;
+  white-space: normal; 
+  overflow: visible; 
+  text-overflow: clip;
 }
