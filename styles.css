@@ -107,3 +107,10 @@ body  {
   margin-top: 20px;
   color: blue;
 }
+
+#navto-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15%;
+}
