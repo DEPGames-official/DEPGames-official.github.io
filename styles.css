@@ -114,3 +114,12 @@ body  {
   align-items: center;
   margin: 15%;
 }
+
+#navto-feature > button {
+  width: 20%;
+  height: 40px;
+  background-color: transparent;
+  color: blue;
+  border-color: blue;
+  border-radius: 10px 10px 10px 10px;
+}
