@@ -122,4 +122,12 @@ body  {
   color: blue;
   border-color: blue;
   border-radius: 10px 10px 10px 10px;
+  font-size: 17px;
+}
+
+#navto-feature > button:hover {
+  display: inline-block;
+  border-color: #00ffff;
+  color: #00ffff;
+  cursor: pointer;
 }
