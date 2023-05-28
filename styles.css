@@ -91,6 +91,8 @@ body  {
   border-color: aqua;
 }
 
+#username.invalidated,
+#email.invalidated,
 #password.invalidated {
   border-color: red;
 }

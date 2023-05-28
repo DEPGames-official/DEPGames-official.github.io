@@ -17,9 +17,9 @@ export function isLoggedIn() {
 export function showInvalidCredentialsMessage(){
   invalidatedDiv.textContent = "Invalid Credentials";
   //Change username, email and password input border colour to red
-  usernameElement.style.borderColor = "red";
-  emailElement.style.borderColor = "red";
-  passwordElement.style.borderColor = "red";
+  usernameElement.classList.add("invalidated");
+  emailElement.classList.add("invalidated");
+  passwordElement.classList.add("invalidated");
 }
 
 export function hideInvalidCredentialsMessage(){
