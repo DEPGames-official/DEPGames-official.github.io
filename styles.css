@@ -6,6 +6,9 @@
 body  {
   background-color: black;
 }
+#page-sentences {
+  background-color: white;
+}
 
 #body-home {
   color: white;
@@ -13,7 +16,7 @@ body  {
 
 #nav-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 48px;
   animation: swap-colors 3s infinite;
 }
 
@@ -103,9 +106,13 @@ body  {
   height: 26px;
 }
 
-#home-line-1 {
+#line-1 {
   margin-top: 20px;
   color: blue;
+}
+
+#line-1 > h2 {
+  color: aqua;
 }
 
 #navto-feature {
@@ -137,3 +144,45 @@ body  {
   overflow: visible; 
   text-overflow: clip;
 }
+
+.hidden {
+  display: none;
+}
+
+#quiz-container {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 330px;
+  width: 80%;
+  border-radius: 10px 10px 10px 10px;
+}
+#sentence, #translation, #hint {
+  margin: 20px;
+}
+
+#sentence, #input-translation {
+  width: 900px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#end-buttons {
+  margin-top: 30px;
+}
+
+#label-sentence {
+  color: #00ffff;
+}
+
+#label-translation {
+  color: #0000ff;
+}
+
+#end-buttons > button:first-child, #end-buttons > button:last-child {
+  margin: 80px;
+  width: 20%;
+  height: 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+
