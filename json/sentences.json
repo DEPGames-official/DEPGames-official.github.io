@@ -1,0 +1,20 @@
+{
+    "sentences":[
+        {
+            "english": "Hello",
+            "spanish": "¡Hola!"
+        },
+        {
+            "english": "How are you?",
+            "spanish": "¿Cómo estás?"
+        },
+        {
+            "english": "What is your name?",
+            "spanish": "¿Cómo te llamas?"
+        }
+
+
+    ]
+
+
+}
