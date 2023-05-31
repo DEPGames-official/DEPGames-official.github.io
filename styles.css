@@ -31,6 +31,7 @@ body  {
     color: blue;
   }
 }
+
 #nav {
   text-align: center;
   margin-top: 13px;
@@ -40,7 +41,7 @@ body  {
   text-decoration: none;
   margin-right: 20px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 23px;
   color: grey;
 }
 
@@ -192,4 +193,48 @@ body  {
   height: 50px;
   border-radius: 10px 10px 10px 10px;
   font-size: 17px;
+}
+
+#end-message {
+  margin-top: 48px;
+  margin-bottom: 50px;
+  color: #008000;
+  /*animation: swap-colors 3s infinite;*/
+}
+
+/*need assistance with having animation target element of the end-message id only
+@keyframes swap-colors {
+  0% {
+    color: green;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: green;
+  }
+}*/
+#end-results {
+  font-size: 20px;
+}
+
+#fill-nameofquiz, #fill-quizresults {
+  color: #008000;
+  text-shadow: 0 0 5px #008000, 0 0 15px#008000, 0 0 30px #008000;
+  font-size: 25px;
+}
+
+#re-nav {
+  margin-top: 60px;
+}
+
+#re-nav > button {
+  width: 110px;
+  height: 30px;
+  margin: 20px;
+  color: green;
+  border-color: green;
+  border-radius: 10px 10px 10px 10px;
+  background: transparent;
+  font-weight: bold;
 }
