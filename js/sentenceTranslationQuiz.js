@@ -1,10 +1,25 @@
 var outputSentence = document.getElementById("sentence");
 var nextSentence = document.getElementById("next-button");
+
 var sentences;
+var sentenceInput;
+
+var english;
+var spanish;
 
 processSentences();
+
 nextSentence.addEventListener("click", function(){
-    generateRandomSentence(sentences)
+    sentenceInput = document.getElementById("input-translation").value;
+
+    if(isTranslationCorrect() === true){
+        //Say congrats or something and add a point
+        updateSentencePoint(sentencePoints + 1);
+    }
+    else{
+        //Say wrong or something and dont add a point
+    }
+    generateRandomSentence(sentences);
 });
 
 
@@ -17,18 +32,31 @@ function processSentences(){
         
     })
     .catch(error => {
-        console.error("Error loading JSON file: ", error)
+        console.error("Error loading JSON file: ", error);
     });
 }
 
 function generateRandomSentence(dataSentences){
     const randomIndex = Math.floor(Math.random() * dataSentences.length);
     const randomSentence = dataSentences[randomIndex];
-    const english = randomSentence.english;
-    const spanish = randomSentence.spanish;
+    
+    english = randomSentence.english;
+    spanish = randomSentence.spanish;
 
     outputSentence.value = english;
 
-    console.log(`English: ${english}`);
-    console.log(`Spanish: ${spanish}`);
+
+    //Use to verify if outputting correctly
+    //console.log(`English: ${english}`);
+    //console.log(`Spanish: ${spanish}`);
+}
+
+function isTranslationCorrect(){
+    if (sentenceInput === spanish){
+        return true;
+    }
+    else{
+        return false;
+    }
+    
 }
